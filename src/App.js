@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import './app.css'
 
-function App() {
+const  App = () =>  {
+
+  const handleBtnWallet = () => {
+    // action buttons
+    console.log('button wallet clicked')
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <div className="btn" onClick={()=>handleBtnWallet()}>Wallet</div>
+        <div className="btn">Mint</div>
+
+        <div className="btn">Button 1</div>
+        <div className="btn">Button 2</div>
     </div>
   );
 }
