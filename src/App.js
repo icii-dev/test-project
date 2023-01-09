@@ -1,6 +1,7 @@
 import "./App.css";
 import { StatusComponent } from "./showstatus.js";
 import { ConnectComponent } from "./connectwallet.js";
+import { MintComponent } from "./mintcomponent.js";
 import { StarknetConfig, InjectedConnector } from "@starknet-react/core";
 
 // function MyApp({ Component, pageProps }) {
@@ -37,6 +38,7 @@ const App = () => {
       <div className="btn">Button 2</div>
       <ConnectComponent></ConnectComponent>
       <StatusComponent></StatusComponent>
+      <MintComponent></MintComponent>
     </StarknetConfig>
   );
 };
